@@ -1,0 +1,101 @@
+1. Identify which of the following are values or expressions:
+Given:
+*, 'hello', -87.8, -, /, +, 6
+
+Element	Type
+*	Expression (Operator)
+'hello'	Value (String)
+-87.8	Value (Float)
+-	Expression (Operator)
+/	Expression (Operator)
++	Expression (Operator)
+6	Value (Integer)
+
+2. What is the difference between a string and a variable?
+A string is a sequence of characters enclosed in quotes, like "hello".
+
+A variable is a name used to store data. It can store a string, number, or other types.
+
+Example:
+
+python
+Copy
+Edit
+name = "Alice"  # 'Alice' is a string, name is a variable
+3. Describe three different data types.
+Integer (int) – Whole numbers
+Example: 5, -10
+
+String (str) – Sequence of characters
+Example: 'hello', "123"
+
+Float (float) – Decimal numbers
+Example: 3.14, -0.01
+
+4. What is an expression made up of? What do all expressions do?
+✅ An expression is made up of values, variables, and operators.
+It evaluates to a single value.
+
+Example:
+
+python
+Copy
+Edit
+3 + 4 * 2  # Evaluates to 11
+5. What is the difference between an expression and a statement?
+An expression produces a value.
+Example: 2 + 3, "hello" * 2
+
+A statement performs an action or assignment.
+Example: x = 5 (assignment), print("Hello") (function call)
+
+6. After running the following code, what does the variable bacon contain?
+python
+Copy
+Edit
+bacon = 22
+bacon + 1
+✅ Answer: 22
+
+bacon + 1 evaluates to 23, but it doesn't change the value of bacon unless you assign it: bacon = bacon + 1.
+
+7. What should the values of the following two expressions be?
+'spam' + 'spamspam' → ✅ 'spamspamspam'
+
+'spam' * 3 → ✅ 'spamspamspam'
+
+8. Why is eggs a valid variable name while 100 is invalid?
+✅ Variable names cannot start with a number.
+
+eggs is valid because it starts with a letter.
+
+100 is invalid because it is a number, not a valid identifier.
+
+9. What three functions can be used to get the integer, floating-point number, or string version of a value?
+Type	Function
+Integer	int()
+Float	float()
+String	str()
+
+Example:
+
+python
+Copy
+Edit
+int('5')      # 5
+float('3.14') # 3.14
+str(42)       # '42'
+10. Why does this expression cause an error? How can you fix it?
+python
+Copy
+Edit
+'I have eaten ' + 99 + ' burritos.'
+✅ Error: Cannot concatenate string and integer (TypeError).
+
+✅ Fix:
+
+python
+Copy
+Edit
+'I have eaten ' + str(99) + ' burritos.'
+# Output: 'I have eaten 99 burritos.'
